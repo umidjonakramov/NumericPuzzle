@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_10"
+    tools:context=".KirishActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/clip"
+        android:text="Best Result"
+        android:textColor="#F35DF7"
+        android:textSize="42sp" />
+
+    <studio.karo.neonbutton.NeonButton
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/clip"
+        android:textColor="#F35DF7"
+        android:textSize="42sp"
+        app:nb_neon_color="#F35DF7"
+        app:nb_neon_filled="false"
+        app:nb_neon_icon_padding="15dp"
+        app:nb_neon_radius="20dp"
+        app:nb_neon_width="2dp" />
+
+    <TextView
+        android:id="@+id/Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qwertyuiop"
+        android:fontFamily="@font/clip"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="42sp"
+        android:textColor="#F35DF7"
+        />
+
+    <ImageView
+        android:layout_width="183dp"
+        android:layout_height="171dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/img_2" />
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/Record"-->
+    <!--        android:textColor="#F35DF7"-->
+    <!--        android:fontFamily="@font/clip"-->
+    <!--        android:textSize="32sp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/arrow_back2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/left_arrow_back_svgrepo_com" />
+
+</FrameLayout>
+

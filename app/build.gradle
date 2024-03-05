@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'uz.gita.puzzle_umg'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "uz.gita.puzzle_umg"
+        minSdk 24
+        targetSdk 33
+        versionCode 2
+        versionName "1.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.github.SMehranB:GlowNeonButton:2.0.1'
+    implementation 'com.github.gabriel-TheCode:AestheticDialogs:1.0.0'
+
+    api 'com.github.karostudio:NeonButton:1.1.5'
+
+    // animation
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    // Material Dialog Library
+    implementation 'dev.shreyaspatil.MaterialDialog:MaterialDialog:2.2.3'
+
+    // Material Design Library
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // Lottie Animation Library
+    implementation 'com.airbnb.android:lottie:3.3.6'
+
+
+    implementation 'com.github.gabriel-TheCode:AestheticDialogs:1.0.0'
+
+}

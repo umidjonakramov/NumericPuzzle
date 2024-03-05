@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/img_10"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        />
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/microphone"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center|top"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/volume_max_svgrepo_com" />-->
+
+<!--   qwertyuiop     <androidx.constraintlayout.widget.ConstraintLayout     qwertyuiop    -->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_gravity="center|top"-->
+<!--    >-->
+<!--    <Button-->
+<!--        android:id="@+id/Timer"-->
+<!--        android:backgroundTint="#00FFFFFF"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="top|center"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="00:00"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/clock"-->
+<!--        />-->
+<!--    <ImageView-->
+<!--        android:id="@+id/clock"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:src="@drawable/time_svgrepo_com"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_gravity="center|top"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/Timer"-->
+<!--        />-->
+<!--    qwertyuiop          </androidx.constraintlayout.widget.ConstraintLayout>      qwertyuiop           -->
+    <!--    <Button-->
+    <!--        android:id="@+id/Counter"-->
+    <!--        style="@style/Widget.MaterialComponents.Button.TextButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="top|right"-->
+    <!--        android:layout_marginRight="40dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:text="Moves"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold" >-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/move1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="16sp">-->
+    <!--    </TextView>-->
+    <!--    </Button>-->
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOVES: "
+            android:fontFamily="@font/clip"
+            android:textColor="#F35DF7"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/move1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F35DF7"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:fontFamily="@font/clip"
+            android:textSize="24sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="56dp"-->
+    <!--        android:layout_margin="80dp"-->
+    <!--        android:text="asdfg"-->
+    <!--        android:backgroundTint="#56E91E63"-->
+    <!--        android:clickable="true"-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/move1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="16sp">-->
+    <!--    </TextView>-->
+
+    <ImageView
+        android:id="@+id/Shuffle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|right"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:src="@drawable/refresh_svgrepo_com"
+        />
+
+
+    <ImageView
+        android:id="@+id/Exit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|left"
+        android:layout_margin="10dp"
+        android:backgroundTint="#260730FF"
+        android:padding="10dp"
+        android:src="@drawable/left_arrow_back_svgrepo_com"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15dp"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout style="@style/linearLayout"
+            android:gravity="center"
+            >
+
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"/>
+
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout"
+            android:gravity="center"
+            >
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout"
+            android:gravity="center">
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayout"
+            android:gravity="center">
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+            <studio.karo.neonbutton.NeonButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:textSize="30sp"
+                android:textColor="#F35DF7"
+                app:nb_neon_width="2dp"
+                app:nb_neon_radius="20dp"
+                app:nb_neon_color="#F35DF7"
+                app:nb_neon_filled="false"
+                app:nb_neon_icon_padding="15dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record: "
+        android:fontFamily="@font/clip"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#F35DF7"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="20dp"
+        />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/volume"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/volume_loud_svgrepo_com"-->
+<!--        android:layout_gravity="right|bottom"-->
+<!--        android:layout_margin="30dp"-->
+<!--        />-->
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_10"
+    android:backgroundTint="#99000000"
+    android:backgroundTintMode="src_over"
+    android:padding="10dp"
+    tools:context=".KirishActivity">
+
+    <TextView
+        android:id="@+id/qwert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/clip"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textColor="#F35DF7"
+        android:textSize="42sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/arrow_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/left_arrow_back_svgrepo_com" />
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:src="#32000000"-->
+    <!--        />-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/clip"
+            android:justificationMode="inter_word"
+
+            android:text="O'yin tavsifi - \n'Puzzle 15' da siz 15 ta raqamli plitkalar ketma-ketligini to'g'ri tartibda joylashtirishingiz kerak.\nPlitkalarni birlashtirish uchun o'ng, chap, yuqori yoki pastki tomonlariga tashlash imkoniyatiga ega bo'lasiz. \nAmaliyot oson, lekin o'zingizni reaksiyangiz va fiklashingizni rivojlantirish uchun juda katta foydasi mavjud!\n\nAsosiy xususiyatlar:\n- O'yin oson va qulay interfeysga ega.\n- Plitkalar 1 dan 15 gacha tartiblangan bo'lishi kerak.\n- O'ynash vaqtida vaqtingizni sinab ko'ring;\n- Eng yuqori natijalarga erishish uchun do'stlaringiz bilan raqobatlashing;\n- O'yin doimiy yangilanuvchi yangi darajalari va xususiyatlar bilan.\n\nO'yin tezroq, zavqli va fikrlashni talab qiladigan jangari puzzle o'yinlarini yaxshi ko'rganlar uchun mo'ljallangan. Ushbu loyihaga o'zingizni sinab ko'ring va yorug' vaqt o'tkazish uchun eng yaxshi rahbar bo'ling!\nYoqimli vaqt o'tkazish uchun 'Puzzle 15' o'yinini endi yuklab oling va ajoyib vaqt o'tkazish uchun tayyor bo'ling! Iltimos, o'yinni baholashdan boshlang va do'stlaringiz bilan natijalaringizni baham ko'ring. To'g'ri joyni topishda omad!
+\n\n Omad siz bilan bo'lsin! \n\n Tuzuvchi: Umidjon Akramov
+"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@id/qwert"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

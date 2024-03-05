@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <studio.karo.neonbutton.NeonButton
+        android:id="@+id/Record"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="#669C249F"
+        android:fontFamily="@font/clip"
+        android:textColor="#F35DF7"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:nb_neon_color="#F35DF7"
+        app:nb_neon_filled="false"
+        app:nb_neon_icon_padding="15dp"
+        app:nb_neon_radius="20dp"
+        app:nb_neon_width="2dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animLotti"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/Record"
+        app:layout_constraintRight_toRightOf="@id/Record"
+        app:layout_constraintTop_toTopOf="@id/Record"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/animation_lkojxyxt" />
+
+    <TextView
+        android:id="@+id/WinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/clip"
+        android:text="You are winner!!!"
+        android:textColor="#F35DF7"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@id/animLotti"
+        app:layout_constraintRight_toRightOf="@id/animLotti"
+        app:layout_constraintTop_toBottomOf="@id/Moves" />
+
+    <studio.karo.neonbutton.NeonButton
+        android:id="@+id/Again"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/clip"
+        android:text="Again"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/Record"
+        app:layout_constraintLeft_toRightOf="@id/Menu"
+        app:layout_constraintRight_toRightOf="@id/Record"
+        app:nb_neon_color="#F35DF7"
+        app:nb_neon_filled="false"
+        app:nb_neon_icon_padding="15dp"
+        app:nb_neon_radius="20dp"
+        app:nb_neon_width="2dp"
+        />
+
+    <studio.karo.neonbutton.NeonButton
+        android:id="@+id/Menu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/clip"
+        android:text="Menu"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/Record"
+        app:layout_constraintLeft_toLeftOf="@id/Record"
+        app:layout_constraintRight_toLeftOf="@id/Again"
+        app:nb_neon_color="#F35DF7"
+        app:nb_neon_filled="false"
+        app:nb_neon_icon_padding="15dp"
+        app:nb_neon_radius="20dp"
+        app:nb_neon_width="2dp"
+        />
+
+    <TextView
+        android:id="@+id/Moves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qwertyuio"
+        android:fontFamily="@font/clip"
+        android:textSize="24sp"
+        android:textColor="#F35DF7"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@id/WinText"
+        app:layout_constraintLeft_toLeftOf="@id/animLotti"
+        app:layout_constraintRight_toRightOf="@id/animLotti"
+        app:layout_constraintTop_toBottomOf="@id/animLotti"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
